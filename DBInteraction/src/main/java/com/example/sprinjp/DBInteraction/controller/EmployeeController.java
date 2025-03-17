@@ -74,7 +74,7 @@ public class EmployeeController {
 	 public EmployeeDB saveTheDetails(@RequestBody EmployeeDB emp) {
 		try {
 			EmployeeDB ep= eps.saveDetails(emp);
-			 
+			 System.out.println("Saving Details");
 		 return ep;
 				 } catch (Exception e) {
             return null;
