@@ -11,4 +11,7 @@ public class RemoteControlImpl {
         rm.play();
         rm.volumeUp();
     }
+    public void add(){
+        System.out.println("Adding two values");
+    }
 }
