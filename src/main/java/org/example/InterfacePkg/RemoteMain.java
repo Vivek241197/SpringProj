@@ -5,23 +5,17 @@ import java.util.*;
 public class RemoteMain {
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 5};
-        int target = 11;
-        //Inside feature branch
         
+        System.out.println("true");
     }
-
 }
+
 //
-class TreeNode {
+class ListNode {
       int val;
-     TreeNode left;
-     TreeNode right;
-     TreeNode() {}
-     TreeNode(int val) { this.val = val; }
-      TreeNode(int val, TreeNode left, TreeNode right) {
-          this.val = val;
-          this.left = left;
-          this.right = right;
-      }
+      ListNode next;
+      ListNode() {}
+      ListNode(int val) { this.val = val; }
+      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
   }
+
