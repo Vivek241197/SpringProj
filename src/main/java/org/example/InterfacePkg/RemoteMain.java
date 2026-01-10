@@ -5,22 +5,41 @@ import java.util.*;
 public class RemoteMain {
 
     public static void main(String[] args) {
-        int[][] p = {{1,2,3,4},
-                    {3,0,7,8},
-                    {9,3,4,5}};
-        boolean[][] q = new boolean[p.length][p[0].length];
-        for(int i=0;i<p.length;i++){
-            for(int j=0;j<p[i].length;j++){
-                if(p[i][j]==0){
-                    q[i][j]=true;
-                }
-            }
-        }
-
-
-
+      Stack<Integer> st = new Stack<>();
+      String[] tokens = {"2","1","+","3","*"};
+      for(String s:tokens){
+          if(s=="+"){
+              int a=st.pop();
+              int b=st.pop();
+              int sum=a+b;
+              st.push(sum);
+          }
+          else if(s=="-"){
+              int a=st.pop();
+              int b=st.pop();
+              int sum=b-a;
+              st.push(sum);
+          }
+          if(s=="*"){
+              int a=st.pop();
+              int b=st.pop();
+              int sum=a*b;
+              st.push(sum);
+          }
+          else if(s=="/"){
+              int a=st.pop();
+              int b=st.pop();
+              int sum=b/a;
+              st.push(sum);
+          }else if(s!="+" && s!="*" && s!="-" && s!="/"){
+              st.push(Integer.parseInt(s));
+          }
+      }
+      ListNode p = new ListNode();
+        System.out.println(st.pop());
     }
 }
+
 
 class ListNode {
       int val;
