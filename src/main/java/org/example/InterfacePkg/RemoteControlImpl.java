@@ -1,17 +1,39 @@
 package org.example.InterfacePkg;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
 public class RemoteControlImpl {
 
-    public RemoteControl rm;
+    public static void main(String[] args) {
 
-    public RemoteControlImpl(RemoteControl r){
-        this.rm=r;
-    }
-    public void operate(){
-        rm.play();
-        rm.volumeUp();
-    }
-    public void add(){
-        System.out.println("Adding two values");
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+       /* int nxt = 1;
+        for(int i=0;i<s.length();i++){
+            char c= s.charAt(i);
+            char b= s.charAt(i+1);
+            if((c==')') || (c=='}')) System.out.println("wrong");
+            if((c=='(') && (b==')') || (c=='{') && (b=='}')){
+                i=i+1;
+            }
+        }
+        System.out.println("All good");*/
     }
 }
